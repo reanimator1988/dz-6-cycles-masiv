@@ -1,9 +1,9 @@
-const numbers = [5, 8, -1, '-6', 11, 'ololo', '-2']
-let sum = 0
-	for (let i = 0; i < numbers.length; i++) {
-  		sum += numbers[i]
-}
-alert('Sum is ' + sum)
+// const numbers = [5, 8, -1, '-6', 11, 'ololo', '-2']
+// let sum = 0
+// 	for (let i = 0; i < numbers.length; i++) {
+//   		sum += numbers[i]
+// }
+// alert('Sum is ' + sum)
 
 // 1) оголоcити numbers
 // 2) присвоїти numbers масив з 7 елементів 5, 8, -1, '-6', 11, 'ololo', '-2': numbers = [5, 8, -1, '-6', 11, 'ololo', '-2']
@@ -22,17 +22,16 @@ alert('Sum is ' + sum)
 //18) збільшити i на одиницю: i = 3
 //19) перевірити, чи i менше довжини масиву: 3 < 7 - так
 //20) присвоїти sum попереднє значення додавання на 3-й елемент масиву: sum = 12 '-6'
-//21) виводить повідомлення Sum is 12-611ololo-2
+//21) вивести повідомлення Sum is 12-611ololo-2
 
 // щоб добуток правильно рахувався, треба:
 
 const numbers = [5, 8, -1, '-6', 11, 'ololo', '-2']
 let sum = 0
 	for (let i = 0; i < numbers.length; i++) {
-		if ( isNaN(numbers[i]) == true) {continue}
-	    else { sum += Number(numbers[i])
+		if (isNaN(numbers[i])) {continue}
+	    	sum += Number(numbers[i])
 	}
-}
 alert('Sum is ' + sum)
 
 
